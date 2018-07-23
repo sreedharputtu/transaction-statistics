@@ -9,6 +9,7 @@ Specs
 ### APIS
 
 ##### POST /transactions
+---
 
 Every Time a new transaction happened, this endpoint will be called.
 Body:
@@ -31,6 +32,7 @@ Sample request
 
 
 ##### GET /statistics
+---
 
 This is the main endpoint of this task, this endpoint have to execute in constant time and
 memory (O(1)). It returns the statistic based on the transactions which happened in the last 60
@@ -54,9 +56,11 @@ Where:
   
   
 ##### To build JAR
+---
 `mvn clean install`
 
-##### To RUN JAR
+##### To run JAR
+---
 `Java -jar transaction-statistics-1.0-SNAPSHOT.jar`
 
 ##### To access apis in localhost
